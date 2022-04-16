@@ -1,0 +1,360 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+.container {
+  width: 80%;
+  margin: 0 auto;
+  margin-bottom: 4rem;
+}
+
+.container1 {
+  width: 100%;
+  background-color: #1F98F0;
+}
+
+body, html {
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+button {
+  color: #000;
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 10px 20px;
+  display: inline-block;
+  font-size: 16px;
+  font-family: "Montserrat";
+  border: none;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+
+.main {
+  background-color: #1F98F0;
+  color: #fff;
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 1rem;
+}
+.main header {
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.main header .logo {
+  margin-right: 4rem;
+}
+.main .navb {
+  transition: 0.5s;
+  display: flex;
+}
+.main .navb > div {
+  display: flex;
+}
+.main .navb nav {
+  display: flex;
+  align-items: center;
+}
+.main .navb nav ul {
+  margin: 0;
+  padding: 0;
+  display: inline-flex;
+  margin-right: 5rem;
+}
+.main .navb nav li {
+  margin: 0 1rem 0 0;
+  padding: 0;
+  list-style-type: none;
+}
+.main main {
+  display: flex;
+  padding: 3rem 0;
+}
+.main main button > img {
+  width: 150px;
+  height: 50px;
+}
+.main .info, .main .app {
+  width: 50%;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.main .info .story {
+  display: flex;
+  align-items: center;
+}
+.main .info .story div {
+  margin: 0 0.5rem;
+  width: 180px;
+}
+.main .info .story img {
+  width: 100%;
+}
+.main .app {
+  user-select: none;
+}
+.main .app img {
+  width: 50%;
+}
+.main .app > div {
+  text-align: right;
+  margin-right: 3rem;
+}
+.main span#dropdown {
+  visibility: hidden;
+  position: fixed;
+  z-index: 9999;
+  top: 1rem;
+  right: 1rem;
+}
+
+@media (max-width: 840px) {
+  .main main {
+    flex-direction: column;
+  }
+  .main .navb {
+    display: flex;
+    backdrop-filter: blur(5px);
+    flex-direction: column;
+    position: fixed;
+    left: 100%;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+  }
+  .main .navb ul {
+    flex-direction: column;
+    margin: 2rem 0 0 2rem !important;
+    row-gap: 0.4rem;
+  }
+  .main .navb .download_btn {
+    justify-content: center;
+    margin: 5rem;
+  }
+  .main .navb .download_btn button {
+    border: 1px solid #000;
+  }
+  .main .info {
+    width: 100%;
+  }
+  .main .app {
+    width: 100%;
+  }
+  .main .app > div {
+    width: 100%;
+    text-align: center;
+    margin: 2rem 0 0 0;
+  }
+  .main span#dropdown {
+    visibility: visible;
+  }
+}
+@media (max-width: 420px) {
+  .story {
+    display: flex;
+    flex-direction: column;
+  }
+  .story a:nth-child(1) {
+    align-self: flex-start;
+  }
+  .story a:nth-child(2) {
+    align-self: flex-end;
+  }
+}
+@keyframes sh {
+  0% {
+    box-shadow: -5px 5px 8px 0px #1F98F0;
+  }
+  20% {
+    box-shadow: -5px 0px 8px 0px #1F98F0;
+  }
+  40% {
+    box-shadow: 0px -5px 8px 0px #1F98F0;
+  }
+  60% {
+    box-shadow: 5px -5px 8px 0px #1F98F0;
+  }
+  80% {
+    box-shadow: 5px 5px 8px 0px #1F98F0;
+  }
+  100% {
+    box-shadow: 0px 5px 8px 0px #1F98F0;
+  }
+}
+.more .c-use {
+  margin: 3rem 0;
+}
+.more .c-use .logos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.more .main-features {
+  display: flex;
+  margin-bottom: 7rem;
+}
+.more .main-features #snap {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.more .main-features #snap img {
+  width: 260px;
+}
+.more .main-features .main-i {
+  width: 50%;
+}
+.more ul {
+  margin: 0;
+  padding: 0;
+}
+.more ul li {
+  display: inline-flex;
+  margin: 1rem 0;
+  padding: 0;
+  list-style-type: none;
+}
+.more ul li > :nth-child(1) {
+  align-self: center;
+  margin-right: 1.5rem;
+  border-radius: 50%;
+  box-shadow: -5px 5px 8px 0px #1F98F0;
+  animation: sh 1s infinite;
+}
+.more ul i {
+  font-size: xxx-large;
+  color: #1F98F0;
+  margin: 1rem 1rem;
+}
+.more ul h5 {
+  margin: 0 !important;
+}
+
+@media (max-width: 791px) {
+  .main-features {
+    flex-direction: column;
+  }
+  .main-features #snap {
+    width: 100% !important;
+  }
+  .main-features .main-i {
+    width: auto !important;
+  }
+
+  .c-use svg {
+    margin-top: 1rem;
+  }
+}
+.testimonials {
+  margin-bottom: 3rem;
+}
+.testimonials .cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.testimonials .cards .card {
+  margin-top: 3rem;
+  width: 200px;
+}
+.testimonials .cards i {
+  font-size: xx-large;
+}
+.testimonials > h1, .testimonials .card {
+  text-align: center;
+}
+.testimonials p {
+  color: #777;
+}
+
+.d {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 4rem 0;
+  margin-bottom: 4rem;
+}
+.d h1 {
+  color: #fff;
+}
+.d button {
+  color: #1F98F0;
+  height: min-content;
+  align-self: center;
+}
+
+.news {
+  margin: 6rem 0;
+}
+.news h1 {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+.news .cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.news .cards .card {
+  width: 300px;
+  margin-bottom: 4rem;
+}
+.news p {
+  color: #777;
+}
+.news a {
+  font-weight: bold;
+  color: #1F98F0;
+}
+
+footer {
+  color: #fff;
+  padding: 4rem 0;
+}
+footer div {
+  margin-top: 1.5rem;
+}
+footer .container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+footer ul {
+  margin: 0;
+  padding: 0;
+  line-height: 35px;
+}
+footer ul li {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+footer #sendEmail span {
+  display: flex;
+}
+footer #sendEmail input, footer #sendEmail input:focus-visible {
+  border: 0;
+  border-radius: 0;
+  outline: none;
+  padding: 0.5rem;
+}
+footer #sendEmail :nth-child(2) {
+  background-color: #1F98F0;
+  color: #fff;
+  cursor: pointer;
+}
+footer a, footer p {
+  color: #9d9d9d;
+}
+
+/*# sourceMappingURL=style.css.map */
